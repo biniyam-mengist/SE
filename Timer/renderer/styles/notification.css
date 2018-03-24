@@ -1,0 +1,43 @@
+
+body{
+    margin:0px;
+    padding:0px;
+}
+#main-container{
+    width:500px;
+    height:34px;
+    background-color: #111;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius:0px 0px 10px 10px; 
+    overflow: hidden;
+}
+
+#icon{
+    /* border:1px solid blue; */
+    width:17px;
+    height:auto;
+    margin-left:10px;
+    margin-right:20px;
+
+}
+
+#close-button{
+    /* border:1px solid red; */
+    width:11px;
+    margin-left:20px;
+    margin-right: 10px;
+    height:auto;
+ 
+}
+
+#message{
+    color:#80CBC4;
+    /* border:1px solid green; */
+    width:400px;
+    font-family: arial;
+    text-align: center;
+    
+}

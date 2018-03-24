@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time</title>
+    <link rel="stylesheet" href="../styles/time.css">
+    <script>window.$ = window.jQuery = require('../scripts/jquery.min.js');</script>
+    <script src="../scripts/time.js"></script>
+    
+</head>
+<body>
+    <div id="main-container">
+
+
+        
+        <div id="stopwatch-body">
+                <div id="stopwatch-labels">
+                        <span id="hour-label" class="stopwatch-labels">Hours</span><span id="minute-label" class="stopwatch-labels">Minutes</span><span id="second-label" class="stopwatch-labels">Seconds</span>
+                    </div>
+            <div id="time-container">
+                <span id="hour"></span>:<span id="minute"></span>:<span id="second"></span>.<span id="micro-second"></span> 
+            </div>
+            <div id="time-buttons-container">
+                <img src="../resources/images/reset.png" class="time-buttons" id="reset-button">
+                <img src="../resources/images/start.png"  class="time-buttons" id="start-button">
+            </div>
+        </div>
+        
+        
+        <div id="timer-body">
+            <div id="labels">
+                <span id="timer-hour-label" class="timer-labels">Hours</span><span id="timer-minute-label" class="timer-labels">Minutes</span><span id="timer-second-label" class="timer-labels">Seconds</span>
+            </div>
+            <div id="timer-time-container">
+                <span id="timer-hour"></span>:<span id="timer-minute"></span>:<span id="timer-second"></span> 
+            </div>
+            <div id="timer-buttons-container">
+                <img src="../resources/images/reset.png" class="timer-buttons" id="timer-reset-button">
+                <img src="../resources/images/start.png"  class="timer-buttons" id="timer-start-button">
+            </div>
+        </div>
+        
+        
+        <div id="alarm-body">
+            
+            <div id="alarm-list-container">
+                <div class="alarm-list-items" id=""></div>
+                <div class="alarm-list-items" id=""></div>
+            </div>            
+            <img src="../resources/images/add-alarm3.png" id="add-fab-icon"/>
+        </div>
+        
+        <div id="direction-container">
+        <div id="direction"></div>
+        </div>
+
+
+
+        <div id="title-bar">
+            <div id="control-buttons-container">
+                <img src="../resources/images/minimizexd.png"  class="control-buttons" id="minimize-button">
+                <img src="../resources/images/maximizexd.png" class="control-buttons" id="maximize-button">
+                <img src="../resources/images/closexd.png" class="control-buttons" id="close-button">
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div id="nav-buttons-container">
+                <img src="../resources/images/alarm.png"  class="nav-buttons" id="alarm-button">
+                <img src="../resources/images/timer.png" class="nav-buttons" id="timer-button">
+                <img src="../resources/images/stopwatch.png" class="nav-buttons" id="stopwatch-button">
+            </div>
+            <div id="active-beacon"></div>
+        </div>
+    </div>    
+
+</body>
+</html>
