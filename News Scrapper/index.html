@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyNews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title-bar">
+        <div id="label">NEWS</div>
+        <div id="add-button" onclick="showForm()">ADD</div>
+    </div>
+    <div id="container">
+
+
+    </div>
+
+
+
+    <div id="modalBg">
+            <div id="addForm">
+                    <input type="text" id="titleInput" placeholder="News Title">
+                    <textarea name="detail" id="detailInput" placeholder="News Detail"></textarea>
+                    
+                    <div id="postButton" onclick="post()">POST</div>
+                </div>
+        </div>
+    
+</body>
+
+<script>
+    function showForm(){
+        console.log("show clicked");
+        document.getElementById("modalBg").style.display = "flex";
+    }
+
+    function post(){
+        console.log("post Clicked");
+        var title = document.getElementById("titleInput").value;
+        var detail = document.getElementById("detailInput").value;
+
+
+        var myStory = document.createElement("div");
+        myStory.className = "story";
+        
+        var myTitle = document.createElement("div");
+        myTitle.className = "title";
+        myTitle.innerHTML = title;
+
+        var mydetail = document.createElement("div");
+        mydetail.className = "detail";
+        mydetail.innerHTML = detail;
+
+        myStory.appendChild(myTitle);
+        myStory.appendChild(mydetail);
+
+
+         document.getElementById("container").appendChild(myStory);
+
+
+        document.getElementById("titleInput").value = "";
+        document.getElementById("detailInput").value = "";
+          document.getElementById("modalBg").style.display = "none";
+       
+    }
+</script>
+</html>
